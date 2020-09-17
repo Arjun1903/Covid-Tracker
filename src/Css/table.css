@@ -1,0 +1,52 @@
+.table_name {
+	padding: 20px;
+	display: block;
+	overflow: auto;
+}
+table.scroll {
+	width: 100%;
+	background-color: #fff;
+}
+table.scroll thead {
+	width: 100%;
+}
+table.scroll thead tr:after {
+	content: '';
+	overflow-y: scroll;
+	visibility: hidden;
+}
+table.scroll thead th {
+	flex: 1 auto;
+    display: block;
+    background-color: rgb(215, 224, 200);
+	color: black;
+}
+table.scroll tbody {
+	display: block;
+	width: 100%;
+	overflow-y: auto;
+	height: auto;
+	max-height: 600px;
+}
+table.scroll thead tr,
+table.scroll tbody tr {
+	display: flex;
+}
+table.scroll tbody tr td {
+	flex: 1 auto;
+	word-wrap: break;
+}
+table.scroll thead tr th,
+table.scroll tbody tr td {
+	width: 25%;
+	padding: 20px;
+	text-align:left;
+    border-bottom: 1px solid gray;
+    
+}
+
+.table_country {
+    background-color: rgb(231, 235, 226);
+font-weight: bold;
+
+}
